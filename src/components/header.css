@@ -1,0 +1,52 @@
+.head {
+  background-color: #ff7322;
+  display: flex;
+  height: auto;
+  align-items: center;
+  width: 100%;
+}
+.img {
+  width: 83%;
+  height: 80px;
+}
+.center {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.center p {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+}
+.center img {
+  width: 167px;
+  height: 70px;
+  margin: 30px 5px;
+  align-items: center;
+  flex-shrink: 0;
+}
+.logo1 {
+  margin-right: 30px;
+}
+.logo2 {
+  margin-right: 30px;
+}
+/*  MEDIA QUERY FOR HEADER */
+
+@media only screen and (max-width: 583px) {
+  .logo1 {
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .logo2 {
+    display: none;
+  }
+  .center img {
+    width: 100px;
+    margin-left: 0px;
+  }
+}
