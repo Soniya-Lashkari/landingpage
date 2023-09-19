@@ -213,12 +213,12 @@
 }
 
 .arrow {
-  margin-left: 80px;
+  margin-left: 25%;
 }
 .block {
   display: flex;
   flex-direction: column;
-  margin-left: 250px;
+  margin-left: 30%;
   height: auto;
   width: 618px;
 }
@@ -274,7 +274,7 @@
   margin-top: 20px;
 }
 .handimg {
-  margin-left: 60%;
+  margin-left: 50%;
   width: 94px;
   height: 134px;
   flex-shrink: 0;
@@ -288,7 +288,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 53px; /* 132.5% */
-  margin-left: 8%;
+  margin-left: 20vw;
   margin-top: 40px;
 }
 .trustimg {
@@ -424,7 +424,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 53px; /* 132.5% */
-  margin-left: 8%;
+  margin-left: 12%;
 }
 .container {
   display: flex;
@@ -559,7 +559,7 @@
 .card {
   display: flex;
   margin-bottom: 30px;
-  margin-left: 110px;
+  margin-left: 150px;
 }
 .card1-body {
   height: auto;
@@ -654,7 +654,7 @@
 }
 .cards {
   display: flex;
-  margin-left: 110px;
+  margin-left: 150px;
   margin-bottom: 70px;
 }
 .cards1 {
