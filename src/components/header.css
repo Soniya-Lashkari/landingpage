@@ -1,14 +1,14 @@
 .head {
   background-color: #ff7322;
   display: flex;
-  height: auto;
+  height: 91px;
   align-items: center;
   width: 100%;
 }
-.img {
-  width: 83%;
-  height: 80px;
+.head img {
+  margin-left: 20px;
 }
+
 .center {
   display: flex;
   margin-left: auto;
@@ -20,10 +20,11 @@
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
+  line-height: 53px;
 }
 .center img {
   width: 167px;
-  height: 70px;
+  height: 46px;
   margin: 30px 5px;
   align-items: center;
   flex-shrink: 0;
@@ -35,13 +36,26 @@
   margin-right: 30px;
 }
 /*  MEDIA QUERY FOR HEADER */
-
-@media only screen and (max-width: 583px) {
+@media only screen and (max-width: 406px) {
+  .logo1 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 636px) {
+  .center img {
+    padding-top: 15px;
+  }
+}
+@media only screen and (max-width: 566px) {
+  .logo2 {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
   .logo1 {
     margin-right: 0px;
   }
 }
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 550px) {
   .logo2 {
     display: none;
   }

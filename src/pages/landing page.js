@@ -24,7 +24,7 @@ import image22 from "../image/Ellipse 158.png";
 import image23 from "../image/Ellipse 160.png";
 import image24 from "../image/Ellipse 162.png";
 import image25 from "../image/Line 5.png";
-import image26 from "../image/goal vector 2.png";
+import image26 from "../image/goal vector 3.png";
 import image27 from "../image/marga-santoso-OmPqCwX422Y-unsplash.jpg";
 import image28 from "../image/image 1.png";
 import image29 from "../image/image 8.png";
@@ -40,6 +40,9 @@ import image38 from "../image/akar-icons_facebook-fill.png";
 import image39 from "../image/linkedin trans 1.png";
 import image40 from "../image/dashicons_whatsapp.png";
 import image41 from "../image/image 4.png";
+import image42 from "../image/image 2.png";
+import image43 from "../image/image 10.png";
+import image44 from "../image/image 9.png";
 const landing = () => {
   return (
     <div className="main">
@@ -56,7 +59,6 @@ const landing = () => {
           </h4>
           <p>
             Unlock your social media potential with our expert guidance and{""}
-            <br />
             <span className="text"> AI-Driven</span> Social Media Marketing
           </p>
           <div className="innerbutton">
@@ -94,7 +96,7 @@ const landing = () => {
               <h4>Service Required</h4>
               <p>Enter the service you are looking for</p>
             </div>
-            <button className="btn1 btn5">
+            <button className=" btn5">
               <h3> Book a call</h3>
               {""} <img src={image2} />
             </button>
@@ -391,12 +393,12 @@ const landing = () => {
             Social Media Packages
           </span>
         </h4>
-        <p>
+        <h1>
           Starting with Rs <span className="thre32">32,000/- </span>{" "}
           <span className="thre33">25,000/-</span>
-        </p>
+        </h1>
         <div className="innerbutton2">
-          <button className="btn1">
+          <button className="btn9">
             <h3> Get a Quote</h3>
             {""} <img src={image2} />
           </button>
@@ -550,7 +552,7 @@ const landing = () => {
           for your Brand
         </h4>
         <p>Offer valid for next 3 days only. Hurry up!</p>
-        <div className="innerbutton2">
+        <div className="innerbutton3">
           <button className="btn1">
             <h3> Book a call</h3>
             {""} <img src={image2} />
@@ -562,6 +564,7 @@ const landing = () => {
         <h6>Innovative AI- Software Solutions We Leverage</h6>
         <div className="t12img">
           <img src={image28} />
+          <img src={image42} />
           <img src={image29} />
           <img src={image30} />
           <img src={image31} />
@@ -570,6 +573,8 @@ const landing = () => {
           <img src={image32} />
           <img src={image33} />
           <img src={image41} />
+          <img src={image43} />
+          <img src={image44} />
         </div>
       </div>
 
@@ -597,7 +602,7 @@ const landing = () => {
               <h4>Service Required</h4>
               <p>Enter the service you are looking for</p>
             </div>
-            <button className="btn1 btn5">
+            <button className="btn5">
               <h3> Book a call</h3>
               {""} <img src={image2} />
             </button>
@@ -610,7 +615,11 @@ const landing = () => {
             Let's craft inspiring Brand Stories, stunning Creatives, and
             engaging Campaigns for your brand’s Social Media success.
           </p>
-          <button className="btn1 btn5">
+          <div className="arrow2">
+            {" "}
+            <img src={image4} />
+          </div>
+          <button className=" btn1 btn10">
             <h3> Let's Talk</h3>
             {""} <img src={image2} />
           </button>
