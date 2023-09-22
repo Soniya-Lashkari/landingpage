@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+
 import Logo1 from "../image/logo 15 1 (1).png";
 import image2 from "../image/Vector.png";
 import image3 from "../image/live-chat-icon-online-web-260nw-1557288026 1.png";
@@ -43,7 +44,8 @@ import image41 from "../image/image 4.png";
 import image42 from "../image/image 2.png";
 import image43 from "../image/image 10.png";
 import image44 from "../image/image 9.png";
-const landing = () => {
+
+const Landing = () => {
   return (
     <div className="main">
       {/* First */}
@@ -105,7 +107,7 @@ const landing = () => {
       </div>
 
       {/* Second */}
-      <div className="second">
+      <div div className="second">
         <h3>Our Services</h3>
         <p>
           Tailored packages to suit your brand's unique needs and budget,
@@ -156,23 +158,24 @@ const landing = () => {
           Trusted by Leading Brands across Sectors
         </div>
 
-        <div className="trustimg">
-          <div className="one">
-            {" "}
-            <img src={image7} />
-          </div>
-          <div className="two">
-            <img src={image8} />
-          </div>
-          <div className="three">
-            <img src={image9} />
-          </div>
-          <div className="four">
-            {" "}
-            <img src={image10} />
-          </div>
-          <div className="fife">
-            <img src={image11} />
+        <div className="slideshow2">
+          <div className="slidewrapper2">
+            <div className="slide2">
+              <img src={image7} />
+            </div>
+
+            <div className="slide2">
+              <img src={image8} />
+            </div>
+            <div className="slide2">
+              <img src={image9} />
+            </div>
+            <div className="slide2">
+              <img src={image10} />
+            </div>
+            <div className="slide2">
+              <img src={image11} />
+            </div>
           </div>
         </div>
 
@@ -237,54 +240,55 @@ const landing = () => {
       {/* Fourth */}
       <div className="fourth">
         <h6>See What Our Clients Have to Say About Us </h6>
-        <div className="container">
-          <div className="container1">
-            <img src={image14} /> {""}
-            <img src={image14} />
-            <p>
-              I can't thank Sociocurry enough for the brilliant work they did
-              for Milletude. These guys really know how to create a buzz and
-              spread the word! Their strategies have been spot on in getting our
-              brand in front of the right people.  They know how to ride the
-              wave of the latest social media trends with content, reels, etc
-            </p>
-            <h6>
-              Kanika Tamak <br />
-              <span className="con1">SiMilletude (Founder)</span>
-            </h6>
-          </div>
-          <br />
-          <div className="container2">
-            <img src={image14} /> {""}
-            <img src={image14} />
-            <p>
-              Hats off to Sociocurry for the incredible work they've done for
-              our brand, Siddharth Opticals! We couldn't be happier with the
-              results. Their expertise in social media management and digital
-              marketing is truly unmatched. We're seeing amazing growth and
-              engagement. Keep up the good work, guys!”
-            </p>
-            <h6>
-              Siddharth Nanda <br />
-              <span className="con2">Siddharth opticals (Co-Founder)</span>
-            </h6>
-          </div>
-
-          <div className="container3">
-            <img src={image14} /> {""}
-            <img src={image14} />
-            <p>
-              Sociocurry has been our trusted partner for social media and
-              digital marketing since day one. Their dedicated team has played a
-              crucial role in boosting our online presence and brand visibility.
-              We appreciate their industry expertise and commitment to our
-              success. Highly recommended!. ”
-            </p>
-            <h6>
-              Sonalika Dhand,
-              <br />
-              <span className="con3">SStudio Unbox (Founder)</span>
-            </h6>
+        <div className="slideshow">
+          <div className="slidewrapper">
+            <div className="slide">
+              <img src={image14} /> {""}
+              <img src={image14} />
+              <p>
+                I can't thank Sociocurry enough for the brilliant work they did
+                for Milletude. These guys really know how to create a buzz and
+                spread the word! Their strategies have been spot on in getting
+                our brand in front of the right people.  They know how to ride
+                the wave of the latest social media trends with content, reels,
+                etc
+              </p>
+              <h6>
+                Kanika Tamak <br />
+                <span className="con1">SiMilletude (Founder)</span>
+              </h6>
+            </div>
+            <div className="slide">
+              <img src={image14} /> {""}
+              <img src={image14} />
+              <p>
+                Hats off to Sociocurry for the incredible work they've done for
+                our brand, Siddharth Opticals! We couldn't be happier with the
+                results. Their expertise in social media management and digital
+                marketing is truly unmatched. We're seeing amazing growth and
+                engagement. Keep up the good work, guys!”
+              </p>
+              <h6>
+                Siddharth Nanda <br />
+                <span className="con2">Siddharth opticals (Co-Founder)</span>
+              </h6>
+            </div>
+            <div className="slide">
+              <img src={image14} /> {""}
+              <img src={image14} />
+              <p>
+                Sociocurry has been our trusted partner for social media and
+                digital marketing since day one. Their dedicated team has played
+                a crucial role in boosting our online presence and brand
+                visibility. We appreciate their industry expertise and
+                commitment to our success. Highly recommended!. ”
+              </p>
+              <h6>
+                Sonalika Dhand,
+                <br />
+                <span className="con3">SStudio Unbox (Founder)</span>
+              </h6>
+            </div>
           </div>
         </div>
       </div>
@@ -659,4 +663,4 @@ const landing = () => {
     </div>
   );
 };
-export default landing;
+export default Landing;

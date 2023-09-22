@@ -36,20 +36,20 @@
   margin-right: 30px;
 }
 /*  MEDIA QUERY FOR HEADER */
-@media only screen and (max-width: 336px){
-.head img{
-margin-left: 0px;
-}
-.center{
-  margin-left: 0px;
-  margin-right: 0px;
-}
-.center p{
-   line-height: 30px;
-}
-.head{
-  overflow: hidden;
-}
+@media only screen and (max-width: 336px) {
+  .head img {
+    margin-left: 0px;
+  }
+  .center {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .center p {
+    line-height: 30px;
+  }
+  .head {
+    overflow: hidden;
+  }
 }
 @media only screen and (max-width: 406px) {
   .logo1 {
