@@ -12,13 +12,59 @@
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
   <title>React App</title>
-  
+
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
-  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      let slideIndex = 0;
+      showSlide(slideIndex);
+
+      function showSlide(index) {
+        const slides = $(".slide");
+        const dots = $(".dot");
+
+        if (index >= slides.length) {
+          slideIndex = 0;
+        }
+        if (index < 0) {
+          slideIndex = slides.length - 1;
+        }
+
+        slides.hide();
+        dots.removeClass("active");
+        $(slides[slideIndex]).show();
+        $(dots[slideIndex]).addClass("active");
+      }
+
+      $(".dot").click(function () {
+        const dotIndex = $(this).index();
+        slideIndex = dotIndex;
+        showSlide(slideIndex);
+      });
+
+      function nextSlide() {
+        slideIndex++;
+        showSlide(slideIndex);
+      }
+
+      function prevSlide() {
+        slideIndex--;
+        showSlide(slideIndex);
+      }
+
+      setInterval(nextSlide, 1000); // Auto slide change every 3 seconds
+    });
+
+    let slideIndex = 0;
+    showSlides();
+
+
+  </script>
 
 </body>
 

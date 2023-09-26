@@ -158,29 +158,31 @@ const Landing = () => {
           Trusted by Leading Brands across Sectors
         </div>
 
-        <div className="slideshow2">
-          <div className="slidewrapper2">
-            <div className="slide2">
+        <div className="slider-container">
+          <div className="slider">
+            <div className="slide">
               <img src={image7} />
             </div>
-
-            <div className="slide2">
+            <div className="slide">
               <img src={image8} />
             </div>
-            <div className="slide2">
+            <div className="slide">
               <img src={image9} />
             </div>
-            <div className="slide2">
+            <div className="slide">
               <img src={image10} />
             </div>
-            <div className="slide2">
+            <div className="slide">
               <img src={image11} />
             </div>
           </div>
-        </div>
-
-        <div className="group">
-          <img src={image12} />
+          <div className="dots-container">
+            <div className="dot active"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
+            <div className="dot"></div>
+          </div>
         </div>
       </div>
 
@@ -237,12 +239,11 @@ const Landing = () => {
         </div>
       </div>
 
-      {/* Fourth */}
       <div className="fourth">
         <h6>See What Our Clients Have to Say About Us </h6>
         <div className="slideshow">
           <div className="slidewrapper">
-            <div className="slide">
+            <div className="slidee">
               <img src={image14} /> {""}
               <img src={image14} />
               <p>
@@ -258,7 +259,7 @@ const Landing = () => {
                 <span className="con1">SiMilletude (Founder)</span>
               </h6>
             </div>
-            <div className="slide">
+            <div className="slidee">
               <img src={image14} /> {""}
               <img src={image14} />
               <p>
@@ -273,7 +274,7 @@ const Landing = () => {
                 <span className="con2">Siddharth opticals (Co-Founder)</span>
               </h6>
             </div>
-            <div className="slide">
+            <div className="slidee">
               <img src={image14} /> {""}
               <img src={image14} />
               <p>
@@ -413,33 +414,22 @@ const Landing = () => {
       {/*Eight */}
       <div className="eight">
         <h5>Industries We Have Served So Far</h5>
-        <div className="images">
-          <div className="a">
-            <img src={image21} />
-            <p>Food, Beverages & Hospitality</p>
-          </div>
-
-          <div className="b">
-            <img src={image22} />
-            <p>Beauty & Wellness</p>
-          </div>
-
-          <div className="c">
-            <img src={image23} />
-            <p>Fast Moving Consumer Good</p>
-          </div>
-
-          <div className="d">
-            <img src={image24} />
-            <p>
-              Fashion & <br />
-              Lifestyle
-            </p>
+        <div className="slideshowing">
+          <div className="slidewrappering">
+            <div className="slideeing">
+              <img src={image21} />
+            </div>
+            <div className="slideeing">
+              <img src={image22} />
+            </div>
+            <div className="slideeing">
+              <img src={image23} />
+            </div>
+            <div className="slideeing">
+              <img src={image24} />
+            </div>
           </div>
         </div>
-      </div>
-      <div className="group1">
-        <img src={image12} />
       </div>
 
       {/*Nine */}
