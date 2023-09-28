@@ -25,11 +25,11 @@
 }
 .first-left h4 {
   color: #000;
-  font-family: Poppins;
-  font-size: 35px;
+  font-family: Poppins, sans-serif;
+  font-size: 30px;
   font-style: normal;
   font-weight: 400;
-  line-height: 50px;
+  line-height: 1.2em;
   mix-blend-mode: darken;
   margin-top: 230px;
   margin-right: 10px;
@@ -47,9 +47,9 @@
   line-height: 24px;
 }
 .text2 {
-  color: #fc5d01;
+  color: #ff6d18;
   font-family: Poppins;
-  font-size: 45px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 700;
   line-height: 50px;
@@ -308,7 +308,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 53px; /* 132.5% */
-  margin-left: 20vw;
+  text-align: center;
   margin-top: 40px;
 }
 .trustimg {
@@ -357,10 +357,11 @@
   font-family: Poppins;
   font-size: 30px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 53px; /* 132.5% */
   padding-top: 80px;
-  margin-left: 30%;
+  --widgets-spacing: 20px 20px;
+  text-align: center;
 }
 .inner3 {
   display: flex;
@@ -440,11 +441,11 @@
   height: auto;
   color: #0a0a0a;
   font-family: Poppins;
-  font-size: 40px;
+  font-size: 45px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 53px; /* 132.5% */
-  margin-left: 25%;
+  text-align: center;
 }
 .container {
   display: flex;
@@ -591,7 +592,7 @@
 .cards3:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   transform: scale(1.03);
-  transition: ease-in;
+  transition: ease-in 2s;
 }
 @media only screen and (max-width: 325px) {
   .card1:hover,
@@ -662,7 +663,7 @@
   .card2,
   .cards1,
   .cards2 {
-    margin-bottom: 8px;
+    margin-bottom: 18px;
   }
   .sixth {
     width: 100%;
@@ -1003,7 +1004,16 @@
   .eleimg {
     transform: rotate(90deg);
   }
+  .img27 {
+    display: block;
+  }
 }
+@media only screen and (max-width: 3000px) {
+  .img27 {
+    display: none;
+  }
+}
+
 .tenleft {
   width: 50%;
   padding: 50px;
@@ -1108,7 +1118,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 53px; /* 132.5% */
-  margin-left: 10%;
+  text-align: center;
 }
 .t12img {
   display: flex;
@@ -1121,7 +1131,7 @@
 }
 .t12img img,
 .t12image img {
-  width: 200px;
+  width: 250px;
 }
 .t12image {
   display: flex;
@@ -1160,12 +1170,13 @@
 .t13right {
   width: 50%;
   margin-top: 210px;
+  text-align: center;
 }
 .t13right h1 {
   color: #2c2c2c;
   text-align: center;
   font-family: Poppins;
-  font-size: 40px;
+  font-size: 45px;
   font-style: normal;
   font-weight: 500;
   line-height: 53px; /* 132.5% */
@@ -1182,11 +1193,12 @@
 .t13right p {
   color: #000;
   text-align: center;
-  font-family: Poppins;
-  font-size: 20px;
+  font-family: Poppins, sans-serif;
+  --widgets-spacing: 20px 20px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 400;
-  line-height: 29px; /* 145% */
+  line-height: 30px; /* 145% */
   letter-spacing: 1px;
   height: auto;
 }
@@ -1384,7 +1396,7 @@
 }
 .t14right {
   width: 60%;
-  margin-left: 300px;
+  margin-left: 350px;
   padding: 40px;
   height: auto;
 }
@@ -1628,30 +1640,71 @@ h1 {
   }
 }
 .slideshow {
-  overflow: hidden;
+  /* overflow: hidden;*/
   height: auto;
   width: 500px;
   margin: 0 auto;
   display: flex;
   /* border: solid #e9e1ca;*/
 }
+
 @media only screen and (max-width: 521px) {
   .slideshow {
-    width: 430px;
+    width: 450px;
   }
   .slidee p {
+    width: 300px;
+  }
+  
+}
+@media only screen and (max-width: 436px) {
+  .slideshow {
     width: 350px;
+    margin: 0px;
+  }
+  .slidee p {
+    width: 250px;
+    height: auto;
+  }
+  .slidee{
+    width: 350px;
+  }
+  .slidewrapper{
+    width: calc(350px * 5);
+   animation-name: ss;
+  }
+}
+@keyframes ss {
+  5% {
+    margin-left: 0px;
+  }
+  30% {
+    margin-left: calc(-350px * 1);
+  }
+
+  50% {
+    margin-left: calc(-350px * 2);
+  }
+  70% {
+    margin-left: calc(-350px * 3);
+  }
+  90% {
+    margin-left: calc(-350px * 4);
+  }
+  100% {
+    margin-left: 0px;
   }
 }
 
 .slidewrapper {
   /* Calculate the total width on the
     basis of number of slides */
-  width: calc(500px * 3);
-
+  width: calc(500px * 5);
+  display: flex;
+  justify-content: space-between;
   /* Specify the animation with the
     duration and speed */
-  animation: slides 10s ease infinite;
+  animation: slides 15s ease infinite;
   display: flex;
 }
 
@@ -1659,7 +1712,7 @@ h1 {
   float: left;
   height: 480px;
   width: 500px;
-
+  margin-right: 30px;
   padding: 30px;
 }
 .slidee:nth-child(1) {
@@ -1670,27 +1723,105 @@ h1 {
   background-color: rgba(247, 247, 247, 1);
 }
 
-.slidee:nth-child(3) {
+.slidee:nth-child(3),
+.slidee:nth-child(4),
+.slidee:nth-child(5) {
   background-color: rgba(247, 247, 247, 1);
 }
 
-.slideewrapper:hover {
+.slidewrapper:hover {
   animation-play-state: paused;
 }
 @keyframes slides {
-  20% {
+  5% {
     margin-left: 0px;
   }
-
-  40% {
+  30% {
     margin-left: calc(-500px * 1);
   }
 
-  60% {
+  50% {
     margin-left: calc(-500px * 2);
+  }
+  70% {
+    margin-left: calc(-500px * 3);
+  }
+  90% {
+    margin-left: calc(-500px * 4);
+  }
+  100% {
+    margin-left: 0px;
   }
 }
 
+.dot-pagination {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.dot1 {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  animation: dotChange 15s ease-in; /* Adjust timing as needed */
+}
+.dot2,
+.dot3,
+.dot4,
+.dot5 {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+  animation: dotChange2 10s linear infinite; /* Adjust timing as needed */
+}
+.dot3 {
+  animation: dotChange3 10s linear infinite; /* Adjust timing as needed */
+}
+.dot4 {
+  animation: dotChange4 10s linear infinite;
+}
+.dot5 {
+  animation: dotChange5 10s linear infinite;
+}
+/* Keyframes for dot change */
+@keyframes dotChange {
+  0% {
+    background-color: #141313;
+  }
+  10% {
+    background-color: #0a0a0a;
+  }
+}
+@keyframes dotChange2 {
+  20% {
+    background-color: #141313;
+  }
+}
+@keyframes dotChange3 {
+  40% {
+    background-color: #141313;
+  }
+}
+@keyframes dotChange4 {
+  65% {
+    background-color: #141313;
+  }
+}
+@keyframes dotChange5 {
+  85% {
+    background-color: #141313;
+  }
+}
+
+.t13inner {
+  background-color: #f3efe480;
+}
 .slidee p {
   height: auto;
   flex-shrink: 0;
@@ -1777,20 +1908,20 @@ h1 {
 
 .slider-container {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   text-align: center;
   margin-top: 40px;
 }
 
 .slider {
   display: flex;
-  overflow: hidden;
+
   transition: transform 0s ease-in-out;
 }
 
 .slide {
   width: 100%;
-  display: none;
+
   float: left;
 }
 .slide img {
@@ -1846,9 +1977,8 @@ h1 {
 }
 
 .slideshowing {
-  overflow: hidden;
   height: auto;
-  width: 600px;
+  width: 500px;
   margin: 0 auto;
   display: flex;
   /* border: solid #e9e1ca;*/
@@ -1857,59 +1987,79 @@ h1 {
 .slidewrappering {
   /* Calculate the total width on the
     basis of number of slides */
-  width: calc(600px * 4);
+  width: calc(500px * 7);
 
   /* Specify the animation with the
     duration and speed */
-  animation: slidesing 10s linear infinite;
+  animation: slidesing 30s linear infinite;
   display: flex;
+  animation-fill-mode: both;
+  animation-direction: normal;
 }
 
 .slideeing {
   float: left;
   height: 300px;
-  width: 600px;
+  width: 500px;
   text-align: center;
   padding: 30px;
 }
 .slideeing img {
   width: 200px;
 }
+.slideeing p {
+  color: #000;
+  font-family: Poppins;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0.34px;
+}
 
 .slideewrapper:hover {
   animation-play-state: paused;
 }
 @keyframes slidesing {
-  20% {
+  10% {
     margin-left: 0px;
   }
 
-  40% {
-    margin-left: calc(-600px * 1);
+  20% {
+    margin-left: calc(-500px * 1);
   }
 
+  40% {
+    margin-left: calc(-500px * 2);
+  }
   60% {
-    margin-left: calc(-600px * 2);
+    margin-left: calc(-500px * 3);
   }
   80% {
-    margin-left: calc(-600px * 3);
+    margin-left: calc(-500px * 4);
+  }
+  95% {
+    margin-left: calc(-500px * 5);
   }
 }
 @media only screen and (max-width: 621px) {
   @keyframes slidesing {
-    20% {
+    10% {
       margin-left: 0px;
     }
 
-    40% {
+    20% {
       margin-left: calc(-400px * 1);
     }
 
-    60% {
+    40% {
       margin-left: calc(-400px * 2);
     }
-    80% {
+    60% {
       margin-left: calc(-400px * 3);
+    }
+    80% {
+      margin-left: calc(-400px * 4);
     }
   }
   .slideeing {
@@ -1918,9 +2068,44 @@ h1 {
   .slidewrappering {
     /* Calculate the total width on the
     basis of number of slides */
-    width: calc(400px * 4);
+    width: calc(400px * 5);
   }
   .slideshowing {
     width: 400px;
   }
 }
+
+/*
+.slideshow10 {
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+
+}
+.slidewrapper10 {
+  width: calc(100% * 3);
+  display: flex;
+
+  animation: slid 60s linear infinite;
+}
+.slidee10 {
+  float: left;
+
+  width: 100%;
+}
+@keyframes slid {
+  0% {
+    margin-left: 0px;
+  }
+
+  50% {
+    margin-left: calc(-100% * 1);
+  }
+
+  100% {
+    margin-left: calc(-100% * 2);
+  }
+}*/
+/* margin: 0 auto; */
+/* display: flex; */
+/* border: solid #e9e1ca;*/

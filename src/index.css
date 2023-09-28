@@ -19,7 +19,11 @@ body {
   --font-size-base: 16px;
   --font-size-5xl: 24px;
   --font-size-11xl: 30px;
-
+  
+  --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+    
   /* Colors */
   --color-white: #fff;
   --color-black: #000;

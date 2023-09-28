@@ -54,25 +54,23 @@ const Landing = () => {
           <h4>
             Accelerate your <br />{" "}
             <span className="text2">Business growth</span> with <br />
-            <span className="text2">
-              SOCIAL MEDIA <br />
-              MARKETING
-            </span>
+            <span className="text2">SOCIAL MEDIA MARKETING</span>
           </h4>
           <p>
-            Unlock your social media potential with our expert guidance and{""}
+            Unlock your social media potential with our expert guidance
+            <br /> and{""}
             <span className="text"> AI-Driven</span> Social Media Marketing
           </p>
-          <div className="innerbutton">
+          {/*<div className="innerbutton">
             <button className="btn1">
               <h3> Let's Talk</h3>
               {""} <img src={image2} />
             </button>
-          </div>
+             </div>
           <div className="innerbox">
             <img src={image3} />
             <p1>Hey, Welcome to Sociocurry.How can we help you?</p1>
-          </div>
+              </div>*/}
         </div>
 
         <div className="firstright">
@@ -100,7 +98,6 @@ const Landing = () => {
             </div>
             <button className=" btn5">
               <h3> Book a call</h3>
-              {""} <img src={image2} />
             </button>
           </div>
         </div>
@@ -259,6 +256,41 @@ const Landing = () => {
                 <span className="con1">SiMilletude (Founder)</span>
               </h6>
             </div>
+
+            <div className="slidee">
+              <img src={image14} /> {""}
+              <img src={image14} />
+              <p>
+                We brought Sociocurry on board right after our launch to handle
+                our social media and digital marketing, and they've been killing
+                it ever since. Their content strategy is seriously top notch,
+                and we're loving the quirky design vibe they've brought to our
+                page. We were absolutely thrilled with their idea and how they
+                brought our IPL campaign for My Muscle Meal to life.
+              </p>
+              <h6>
+                Kamalpreet <br />
+                <span className="con1">SiMilletude (Founder)</span>
+              </h6>
+            </div>
+
+            <div className="slidee">
+              <img src={image14} /> {""}
+              <img src={image14} />
+              <p>
+                I am incredibly grateful for the remarkable work done by
+                Sociocurry in not only creating a captivating brand identity for
+                our brand but also crafting a compelling visual storyline. Their
+                expertise in developing a cohesive narrative that resonates with
+                our clients has been instrumental in creating an appealing and
+                unforgettable perspective in the eyes of our customers.
+              </p>
+              <h6>
+                Ayaan Gupta <br />
+                <span className="con1">Cybees</span>
+              </h6>
+            </div>
+
             <div className="slidee">
               <img src={image14} /> {""}
               <img src={image14} />
@@ -293,8 +325,12 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="group1">
-        <img src={image12} />
+      <div className="dot-pagination">
+        <div className="dot1"></div>
+        <div className="dot2"></div>
+        <div className="dot3"></div>
+        <div className="dot4"></div>
+        <div className="dot5"></div>
       </div>
 
       {/* Fifth */}
@@ -417,16 +453,60 @@ const Landing = () => {
         <div className="slideshowing">
           <div className="slidewrappering">
             <div className="slideeing">
-              <img src={image21} />
+              <img
+                src={
+                  "https://sociocurry.in/wp-content/uploads/2023/09/Group-153-2.png"
+                }
+              />
+              <p>Real,Estate Architecture</p>
             </div>
             <div className="slideeing">
-              <img src={image22} />
+              <img
+                src={
+                  "https://sociocurry.in/wp-content/uploads/2023/09/Group-148-1-1.png"
+                }
+              />
+              <p>HomeWare and Furniture</p>
             </div>
             <div className="slideeing">
-              <img src={image23} />
+              <img
+                src={
+                  "https://sociocurry.in/wp-content/uploads/2023/09/Group-144-1.png"
+                }
+              />
+              <p>Food,Hospitality</p>
             </div>
             <div className="slideeing">
-              <img src={image24} />
+              <img
+                src={
+                  "https://sociocurry.in/wp-content/uploads/2023/09/Group-145-2.png"
+                }
+              />
+              <p>Beauty and Wellness</p>
+            </div>
+            <div className="slideeing">
+              <img
+                src={
+                  "https://sociocurry.in/wp-content/uploads/2023/09/Group-153-2.png"
+                }
+              />
+              <p>Automobile</p>
+            </div>
+            <div className="slideeing">
+              <img
+                src={
+                  "https://sociocurry.in/wp-content/uploads/2023/09/Group-149-2.png"
+                }
+              />
+              <p>Finance and Corporate</p>
+            </div>
+            <div className="slideeing">
+              <img
+                src={
+                  "https://sociocurry.in/wp-content/uploads/2023/09/Group-150-1.png"
+                }
+              />
+              <p>Sports and Entertainment</p>
             </div>
           </div>
         </div>
@@ -480,6 +560,10 @@ const Landing = () => {
             Launch Campaign with a compelling{" "}
             <span className="yellow">Brand Storyline</span>
           </h6>
+          <div className="img27">
+            <img src={image27} />
+          </div>
+
           <div className="image26">
             <img src={image25} />
           </div>
@@ -598,25 +682,30 @@ const Landing = () => {
             </div>
             <button className="btn5">
               <h3> Book a call</h3>
-              {""} <img src={image2} />
             </button>
           </div>
         </div>
 
         <div className="t13right">
-          <h1>Ready to create a Social Media Buzz?</h1>
+          <h1>
+            Ready to create a <br />
+            Social Media
+            <br /> Buzz?
+          </h1>
           <p>
-            Let's craft inspiring Brand Stories, stunning Creatives, and
-            engaging Campaigns for your brand’s Social Media success.
+            Let's craft inspiring Brand Stories,
+            <br /> stunning Creatives, and engaging <br />
+            Campaigns for your brand’s <br />
+            Social Media success.
           </p>
-          <div className="arrow2">
+          {/*<div className="arrow2">
             {" "}
             <img src={image4} />
           </div>
           <button className=" btn1 btn10">
             <h3> Let's Talk</h3>
             {""} <img src={image2} />
-          </button>
+            </button>*/}
         </div>
       </div>
 
@@ -628,7 +717,10 @@ const Landing = () => {
             Degree Design, Branding & Digital Marketing Approach
           </p>
           <h6>CONTACT INFO</h6>
-          <h3>SocioCurry Studio, Q Block, DLF Phase 2, Gurgaon, Haryana</h3>
+          <h3>
+            SocioCurry Studio,
+            <br /> Q Block, DLF Phase 2, Gurgaon, Haryana
+          </h3>
         </div>
 
         <div className="t14right">
@@ -647,7 +739,10 @@ const Landing = () => {
             <img src={image40} />
           </div>
           <h6>CONTACT INFO</h6>
-          <h3>SocioCurry Studio, Q Block, DLF Phase 2, Gurgaon, Haryana</h3>
+          <h3>
+            SocioCurry Studio,
+            <br /> Q Block, DLF Phase 2, Gurgaon, Haryana
+          </h3>
         </div>
       </div>
     </div>
