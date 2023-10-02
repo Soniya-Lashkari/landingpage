@@ -548,77 +548,213 @@ const Landing = () => {
       <div className="take">
         <h6>Take a Look at Our Best Work</h6>
       </div>
+      <div class="custom-slider">
+        <input type="radio" name="custom-slide" id="custom-slide1" checked />
+        <input type="radio" name="custom-slide" id="custom-slide2" />
+        <input type="radio" name="custom-slide" id="custom-slide3" />
 
-      {/* Ten */}
-      <div className="ten">
-        <div className="tenleft">
-          <h6>
-            Crafting <span className="bold">Brand Awareness</span> &{" "}
-            <span className="bold">Creative Positioning</span> for
-            <span className="yellow">M’onique’s</span>
-            <br />
-            Launch Campaign with a compelling{" "}
-            <span className="yellow">Brand Storyline</span>
-          </h6>
-          <div className="img27">
-            <img src={image27} />
+        <div class="custom-slide-container">
+          <div class="custom-slide-image" id="custom-img1">
+            <div className="ten">
+              <div className="tenleft">
+                <h6>
+                  Crafting <span className="bold">Brand Awareness</span> &{" "}
+                  <span className="bold">
+                    Creative <br />
+                    Positioning
+                  </span>{" "}
+                  for {""}
+                  <span className="yellow">M’onique’s</span>
+                  <br />
+                  Launch Campaign with a compelling
+                  <br />
+                  <span className="yellow">Brand Storyline</span>
+                </h6>
+                <div className="img27">
+                  <img src={image27} />
+                </div>
+
+                <div className="image26">
+                  <img src={image25} />
+                </div>
+                <p>
+                  We crafted a captivating brand story that merged <br />{" "}
+                  fantasy and fashion, immersing little girls in a fairy
+                  <br /> dreamworld through enchanting dresses. Each dress{" "}
+                  <br />
+                  embodied this magical narrative, blurring the lines
+                  <br /> between reality and fantasy with carefully chosen,
+                  <br />
+                  names. We orchestrated an enchanting photoshoot <br />
+                  aligned with our narrative and complemented it with
+                  <br /> strategic social media content.
+                </p>
+              </div>
+              <div className="tenright">
+                <img src={image27} />
+              </div>
+            </div>
+            <div className="eleven">
+              <p1>
+                Creative <br /> <span className="el">Photoshoot</span>{" "}
+              </p1>
+              <div className="eleimg">
+                <img src={image13} />
+              </div>
+
+              <p1>
+                Captivating
+                <br /> <span className="el">Brand Storyline</span>{" "}
+              </p1>
+              <div className="eleimg">
+                <img src={image13} />
+              </div>
+
+              <p1>
+                1L+
+                <br /> <span className="el">Reach</span>{" "}
+              </p1>
+              <div className="eleimg">
+                <img src={image13} />
+              </div>
+
+              <p1>
+                2.5L+
+                <br /> <span className="el">Impression</span>{" "}
+              </p1>
+            </div>
+          </div>
+          <div class="custom-slide-image" id="custom-img2">
+            <div className="ten">
+              <div className="tenleft">
+                <h6>
+                  Maximizing Engagement for <br />
+                  <span className="yellow"> My Muscle Meal</span> by <br />
+                  leveraging
+                  <span className="bold"> IPL craze</span> leading to{" "}
+                  <span className="yellow">20X</span>
+                  <span className="bold">increase in Engagement</span>
+                </h6>
+                <div className="img27">
+                  <img src={image27} />
+                </div>
+
+                <div className="image26">
+                  <img src={image25} />
+                </div>
+                <p>
+                  We launched the Muscle Premiere League during IPL
+                  <br /> to boost Instagram engagement, encouraging fans
+                  <br /> to predict winning teams before matches for a <br />
+                  chance to earn points and win free meals from
+                  <br /> MMM. We generated entertaining reels and enlisted
+                  <br />
+                  cricket influencers to amplify the campaign.
+                </p>
+              </div>
+              <div className="tenright">
+                <img src="https://blog.zine.co/wp-content/uploads/sites/2/2021/01/1_Content20Infographic20v2-02-02.png" />
+              </div>
+            </div>
+            <div className="eleven">
+              <p1>
+                MPL <br /> <span className="el">Campigen</span>{" "}
+              </p1>
+              <div className="eleimg">
+                <img src={image13} />
+              </div>
+
+              <p1>
+                20X
+                <br /> <span className="el">Increase in Engagement</span>{" "}
+              </p1>
+              <div className="eleimg">
+                <img src={image13} />
+              </div>
+
+              <p1>
+                40K+
+                <br /> <span className="el">Profiles visits</span>{" "}
+              </p1>
+              <div className="eleimg">
+                <img src={image13} />
+              </div>
+
+              <p1>
+                1L+
+                <br /> <span className="el">Impression</span>{" "}
+              </p1>
+            </div>
           </div>
 
-          <div className="image26">
-            <img src={image25} />
+          <div class="custom-slide-image" id="custom-img3">
+            <div className="ten">
+              <div className="tenleft">
+                <h6>
+                  Creating Viral Campaigns for <br />
+                  <span className="yellow">Billing Bar</span> and Engage With
+                  <br />
+                  <span className="bold"> 1.5 Millions users</span> using
+                  <span className="yellow">UGS Content</span>&
+                  <span className="yellow"> Content Marketing</span>
+                </h6>
+                <div className="img27">
+                  <img src={image27} />
+                </div>
+
+                <div className="image26">
+                  <img src={image25} />
+                </div>
+                <p>
+                  We ran Campaign to spread Awareness about <br />
+                  their gender-neutral products . Also attracting a<br /> Vidar
+                  audience during occasions like Diwali ,Navratri , Wedding
+                  session etc
+                </p>
+              </div>
+              <div className="tenright">
+                <img src="https://www.criteo.com/wp-content/uploads/2018/11/sephora-insta.png" />
+              </div>
+            </div>
+            <div className="eleven">
+              <p1>
+                Viral
+                <br /> <span className="el">Photoshoot</span>{" "}
+              </p1>
+              <div className="eleimg">
+                <img src={image13} />
+              </div>
+
+              <p1>
+                400+
+                <br /> <span className="el">Influencer Content</span>{" "}
+              </p1>
+              <div className="eleimg">
+                <img src={image13} />
+              </div>
+
+              <p1>
+                EngagingReels
+                <br /> <span className="el">Idea and Shooting</span>{" "}
+              </p1>
+              <div className="eleimg">
+                <img src={image13} />
+              </div>
+
+              <p1>
+                22.5L+
+                <br /> <span className="el">Increase Sales</span>{" "}
+              </p1>
+            </div>
           </div>
-          <p>
-            We crafted a captivating brand story that merged <br /> fantasy and
-            fashion, immersing little girls in a fairy
-            <br /> dreamworld through enchanting dresses. Each dress <br />
-            embodied this magical narrative, blurring the lines
-            <br /> between reality and fantasy with carefully chosen,
-            <br />
-            names. We orchestrated an enchanting photoshoot <br />
-            aligned with our narrative and complemented it with
-            <br /> strategic social media content.
-          </p>
         </div>
-        <div className="tenright">
-          <img src={image27} />
+
+        <div class="custom-slide-controls">
+          <label for="custom-slide1"></label>
+          <label for="custom-slide2"></label>
+          <label for="custom-slide3"></label>
         </div>
       </div>
-
-      {/*Eleven */}
-      <div className="eleven">
-        <p1>
-          Creative <br /> <span className="el">Photoshoot</span>{" "}
-        </p1>
-        <div className="eleimg">
-          <img src={image13} />
-        </div>
-
-        <p1>
-          Captivating
-          <br /> <span className="el">Brand Storyline</span>{" "}
-        </p1>
-        <div className="eleimg">
-          <img src={image13} />
-        </div>
-
-        <p1>
-          1L+
-          <br /> <span className="el">Reach</span>{" "}
-        </p1>
-        <div className="eleimg">
-          <img src={image13} />
-        </div>
-
-        <p1>
-          2.5L+
-          <br /> <span className="el">Impression</span>{" "}
-        </p1>
-      </div>
-
-      <div className="group1">
-        <img src={image12} />
-      </div>
-
       <div className="seventh">
         <h4>
           Request your

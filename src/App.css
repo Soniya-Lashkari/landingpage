@@ -172,7 +172,7 @@
 }
 @media only screen and (max-width: 380px) {
   .t1inner {
-    margin: 10px;
+    margin: 10%;
     align-items: center;
   }
 }
@@ -938,7 +938,7 @@
   }
 }
 
-@media only screen and (max-width: 485px) {
+@media only screen and (max-width: 600px) {
   .nine {
     flex-direction: column;
   }
@@ -946,7 +946,7 @@
     width: 100%;
   }
   .nineright {
-    width: 100%;
+    width: 70%;
     align-items: center;
   }
 }
@@ -973,14 +973,14 @@
     margin-left: 15px;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 570px) {
   .take h6 {
     margin-left: 5px;
     font-size: 30px;
     align-items: center;
   }
   .fifth h4 {
-    margin-left: 10%;
+    margin-left: 15%;
   }
   .ten {
     flex-direction: column;
@@ -993,7 +993,7 @@
     width: 100%;
   }
   .tenright img {
-    padding: 20px;
+    padding: 40px;
     height: auto;
     width: max-content;
   }
@@ -1013,7 +1013,11 @@
     display: none;
   }
 }
-
+@media only screen and (max-width: 403px) {
+  .ten {
+    align-items: start;
+  }
+}
 .tenleft {
   width: 50%;
   padding: 50px;
@@ -1655,7 +1659,6 @@ h1 {
   .slidee p {
     width: 300px;
   }
-  
 }
 @media only screen and (max-width: 436px) {
   .slideshow {
@@ -1666,12 +1669,12 @@ h1 {
     width: 250px;
     height: auto;
   }
-  .slidee{
+  .slidee {
     width: 350px;
   }
-  .slidewrapper{
+  .slidewrapper {
     width: calc(350px * 5);
-   animation-name: ss;
+    animation-name: ss;
   }
 }
 @keyframes ss {
@@ -2109,3 +2112,63 @@ h1 {
 /* margin: 0 auto; */
 /* display: flex; */
 /* border: solid #e9e1ca;*/
+
+/* Updated CSS classes with different names */
+
+.custom-slider {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.custom-slide-container {
+  display: flex;
+  width: 300%; /* Three slides in total */
+}
+
+.custom-slide-image {
+  flex: 0 0 33.33%; /* Each slide takes 33.33% width */
+  transition: transform 1s ease;
+}
+
+.custom-slide-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.custom-slide-controls {
+  margin-left: 47%;
+  display: flex;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+  margin: 6px 5px;
+  width: 15px;
+  height: 18px;
+  background-color: #333;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 530px) {
+  .custom-slide-controls {
+    margin-left: 35%;
+  }
+}
+/* Updated labels to match the custom names */
+
+#custom-slide1:checked ~ .custom-slide-container {
+  transform: translateX(0);
+}
+
+#custom-slide2:checked ~ .custom-slide-container {
+  transform: translateX(-33.33%);
+}
+
+#custom-slide3:checked ~ .custom-slide-container {
+  transform: translateX(-66.66%);
+}
