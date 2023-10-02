@@ -949,6 +949,9 @@
     width: 70%;
     align-items: center;
   }
+  .nineright p{
+    margin-left: 80px;
+  }
 }
 .ten {
   width: 100%;
